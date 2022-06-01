@@ -13,3 +13,24 @@
     padding: 0.5em 0.6em;
     font-size: 25px;
 }
+.bwaRow{
+    color: white;
+    background-color: black;
+    justify-content: center;
+    padding: 100px;
+    transition: background-color 1s, color 1s, opacity 1s;
+}
+
+.bwaRow:hover{
+    color: black;
+    background-color: white;
+}
+
+img{
+    margin: auto;
+}
+
+hr{
+    margin-bottom: 5px;
+}
+
