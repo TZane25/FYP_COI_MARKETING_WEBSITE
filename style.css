@@ -1,1 +1,15 @@
-
+.aboutContainer{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.aboutText{
+    padding: 70px;
+}
+.aboutIcon{
+    display: inline-block;
+    border-radius: 60px;
+    background: #804580;
+    padding: 0.5em 0.6em;
+    font-size: 25px;
+}
