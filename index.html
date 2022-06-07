@@ -5,164 +5,608 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKS -->
     <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
     <script src="https://kit.fontawesome.com/a62ce815d5.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet"> // Joe mama
+    <link rel="stylesheet" href="style.css">
+    <!-- LINKS -->
+    <title>FYP</title>
+    <style>
 
+    </style>
 </head>
+
 <body>
-    
-    <div class="container aboutContainer">
-                <h2>What we do at COI</h2>
-                <div class="row">
-                    <div class="col-sm-4 col-md-4 aboutText">
-                        <i class="fas fa-book aboutIcon"></i>
-                        <div>
-                            <h4>Warehouse design and Planning</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4 aboutText">
-                        <i class="fas fa-user-tie aboutIcon"></i>
-                        <div>
-                            <h4>Inventory Management </h4>
-                        </div>
 
-                    </div>
-                    <div class="col-sm-4 col-md-4 aboutText">
-                        <i class="fas fa-history aboutIcon"></i>
-                        <div>
-                            <h4>Enterprise Resource Planning</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 col-md-4 aboutText">
-                        <i class="fas fa-book aboutIcon"></i>
-                        <div>
-                            <h4>Process Improvements</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4 aboutText">
-                        <i class="fas fa-user-tie aboutIcon"></i>
-                        <div>
-                            <h4>Automation and Engineering</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4 aboutText">
-                        <i class="fas fa-history aboutIcon"></i>
-                        <div>
-                            <h4>Transport Optimization</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 col-md-4 aboutText">
-                        <i class="fas fa-book aboutIcon"></i>
-                        <div>
-                            <h4>Process Improvements</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4 aboutText">
-                        <i class="fas fa-user-tie aboutIcon"></i>
-                        <div>
-                            <h4>Automation and Engineering</h4>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4 aboutText">
-                        <i class="fas fa-history aboutIcon"></i>
-                        <div>
-                            <h4>Transport Optimization</h4>
-                        </div>
-                    </div>
+    <!-- ZANE NAV BAR -->
+    <div class="container-fluid navContainer">
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light scrollNavbar " id="navbarNav">
+            <a class="navbar-brand" href="#">
+                <img src="images/rp1.png" width="100px" height="100px" class="d-inline-block align-top">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="ms-auto navbar-nav">
+                    <li class="nav-item active">
+                        <a id="scrollNavbartext" class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="scrollNavbartext" class="nav-link" href="#">goRPA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="scrollNavbartext" class="nav-link" href="#">goBWA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="scrollNavbartext" class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid homeContainer">
+        <video autoplay loop muted id="video" <source src="images/video.mp4" type="video/mp4">
+
+
+        </video>
+
+        <div class="headerContainer container-fluid header overlay">
+            <h1>CENTRE OF INNOVATION</h1>
+            <br>
+            <h3>Where ideas come to life</h3>
+
+        </div>
+
+    </div>
+
+    <!-- LIONEL ABOUT US -->
+
+
+    <div class="container-fluid aboutContainer">
+        <h2>What we do at COI</h2>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 aboutText">
+                <i class="fas fa-book aboutIcon"></i>
+                <div>
+                    <h4>Warehouse design and Planning</h4>
                 </div>
             </div>
-    
-    <!------------------------------------------------------------------------------------------------------>
-
-    <div class="container-fluid bwaContainer">
-        <div class="row bwaRow">
-            <div class="col-sm-3 col-md-3">
-
-            </div>
-            <div class="col-sm-3 col-md-3">
-                <div class="row">
-                    <div class="col-sm-4 col-md-4">
-                        <img src="images/microsoft365icon.png" width="100px" height="100px">
-                    </div>
-                    <div class="col-sm-8 col-md-8" style="margin: auto;">
-                        <h2>Uses Microsoft 365</h2>
-                    </div>
-                    <h4>Many companies everywhere are using
-                        Microsoft these days in their daily work
-                        environment. So goBWA helps to train
-                        you effectively in using Microsoft 365
-                        applications to capture, process, and
-                        present data in a auto-efficient way.</h4>
+            <div class="col-sm-4 col-md-4 aboutText">
+                <i class="fas fa-user-tie aboutIcon"></i>
+                <div>
+                    <h4>Inventory Management </h4>
                 </div>
-            </div>
-            <div class="col-sm-3 col-md-3">
-                <img src="images/microsoft365.png" width="300px" height="300px" style="float: right">
-            </div>
-            <div class="col-sm-3 col-md-3">
 
+            </div>
+            <div class="col-sm-4 col-md-4 aboutText">
+                <i class="fas fa-history aboutIcon"></i>
+                <div>
+                    <h4>Enterprise Resource Planning</h4>
+                </div>
             </div>
         </div>
-        <div class="row bwaRow">
-            <div class="col-sm-3 col-md-3">
-
-            </div>
-            <div class="col-sm-3 col-md-3">
-                <img src="images/microsoft365.png" width="300px" height="300px" style="float: left">
-            </div>
-            <div class="col-sm-3 col-md-3">
-                <div class="row">
-                    <div class="col-sm-4 col-md-4">
-                        <img src="images/microsoft365icon.png" width="100px" height="100px">
-                    </div>
-                    <div class="col-sm-8 col-md-8" style="margin: auto;">
-                        <h2>Being Organised</h2>
-                    </div>
-                    <h4>Customers are allocated uniquely when 
-                        they fill up the forms, so that when data
-                        is extracted into the excel sheet or a
-                        database, it would be sorted out 
-                        automatically and accordingly.</h4>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 aboutText">
+                <i class="fas fa-book aboutIcon"></i>
+                <div>
+                    <h4>Process Improvements</h4>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3">
-
+            <div class="col-sm-4 col-md-4 aboutText">
+                <i class="fas fa-user-tie aboutIcon"></i>
+                <div>
+                    <h4>Automation and Engineering</h4>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 aboutText">
+                <i class="fas fa-history aboutIcon"></i>
+                <div>
+                    <h4>Transport Optimization</h4>
+                </div>
             </div>
         </div>
-        <div class="row bwaRow">
-            <div class="col-sm-3 col-md-3">
-
-            </div>
-            <div class="col-sm-3 col-md-3">
-                <div class="row">
-                    <div class="col-sm-4 col-md-4">
-                        <img src="images/microsoft365icon.png" width="100px" height="100px">
-                    </div>
-                    <div class="col-sm-8 col-md-8" style="margin: auto;">
-                        <h2>Generate Emails</h2>
-                    </div>
-                    <h4>Tired of issuing emails to every customers
-                        manually? goBWA allows you to create
-                        an automated email response to 
-                        customers whenever they had fill 
-                        up a form or a feedback.</h4>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 aboutText">
+                <i class="fas fa-book aboutIcon"></i>
+                <div>
+                    <h4>Process Improvements</h4>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3">
-                <img src="images/microsoft365.png" width="300px" height="300px" style="float: right">
+            <div class="col-sm-4 col-md-4 aboutText">
+                <i class="fas fa-user-tie aboutIcon"></i>
+                <div>
+                    <h4>Automation and Engineering</h4>
+                </div>
             </div>
-            <div class="col-sm-3 col-md-3">
-
+            <div class="col-sm-4 col-md-4 aboutText">
+                <i class="fas fa-history aboutIcon"></i>
+                <div>
+                    <h4>Transport Optimization</h4>
+                </div>
             </div>
         </div>
     </div>
 
-    
+    <!-- ZANE RPA -->
+    <div class="spacing"></div>
+
+    <div class="information">
+        <div class="container-fluid bwaIntroduction">
+
+            <div class="container-fluid rpaHeader">
+                <div class="row">
+                    <div class="col-sm-3 col-md-2"></div>
+
+                    <div class="col-sm-8 col-md-8 text-center" id="rpaBwaHeading">
+                        Robotic Process Automation
+                    </div>
+
+                    <div class="col-sm-2 col-md-2"></div>
+
+                </div>
+            </div>
+
+            <div class="row rpaBwaRow">
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <img src="images/microsoft365.png" width="300px" height="300px" style="float: left">
+                </div>
+                <div class="col-sm-4 col-md-4 bwaDesc">
+                    <h5>This program aims to appreciate the benefits of RPA in
+                        automating repetitive tasks and eliminate human error.
+                        Attaining the skills in RPA script development and apply
+                        directly to their work processes. Lastly, to be equipped
+                        with the knowledge to assess and identify possible areas
+                        for RPA development to improve work productivity.</h5>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bwaSocialMedia">
+            <h2 class="bwaHeaderText">Keep up with us</h2>
+            <div class="row">
+                <div class="col-sm-2 col-md-2">
+
+
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <img src="images/microsoft365.png" width="90px" height="90px" style="float: left">
+                </div>
+
+                <div class="col-sm-4 col-md-4" style="text-align: right;">
+                    <h4>View Our posts</h4>
+                </div>
+                <div class="col-sm-2 col-md-2">
+
+                </div>
+            </div>
+            <div class="row socialMediaRow">
+                <div class="col-sm-4 col-md-4">
+                    <h3>Social Media 1</h3>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <h3>Social Media 2</h3>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <h3>Social Media 3</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid embedVideo">
+            <div class="row">\
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8">
+                    <div class="video" style="height: 500px; width:auto; background-color: white;opacity: 50%;">
+                    </div>
+
+                </div>
+
+                <div class="col-md-2"></div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="container-fluid rpaContainer" id="rpa">
+
+            <div class="container-fluid rpaHeader">
+                <div class="row">
+                    <div class="col-sm-3 col-md-2"></div>
+
+                    <div class="col-sm-8 col-md-8 text-center" id="rpaBwaHeading">
+                        WHY USE GO RPA
+                    </div>
+
+                    <div class="col-sm-2 col-md-2"></div>
+
+                </div>
+            </div>
+
+
+            <div class="row rpaBwaRow">
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <img src="images/screw.png" width="100px" height="100px">
+                        </div>
+                        <div class="col-sm-8 col-md-8" style="margin: auto;">
+                            <h2>Auto-Process Task</h2>
+                        </div>
+                        <h4>It can process repeated task you
+                            are working on automatically.
+                            What's more, you could be working
+                            on something else while the system
+                            could automate the repeated task
+                            for you. It saves time and energy.</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <img src="images/autoprocess.png" width="300px" height="300px" style="float: right">
+                </div>
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+            </div>
+
+            <div class="row rpaBwaRow">
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <img src="images/money.png" width="300px" height="300px" style="float: left">
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <img src="images/piggy.png" width="100px" height="100px">
+                        </div>
+                        <div class="col-sm-8 col-md-8" style="margin: auto;">
+                            <h2>Cost Management</h2>
+                        </div>
+                        <h4>Reduces unnecessary costs
+                            such as labour costs due to
+                            the decrease in the use of time
+                            due to the increase in productivity.</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+            </div>
+            <div class="row rpaBwaRow">
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <img src="images/signrisk.png" width="100px" height="100px">
+                        </div>
+                        <div class="col-sm-8 col-md-8" style="margin: auto;">
+                            <h2>Reduce Risks</h2>
+                        </div>
+                        <h4>As there are no humans entering
+                            data in-between software, there
+                            would be lesser chances of wrongly
+                            inputted data. Hence, eliminating
+                            human errors..</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <img src="images/risk.png" width="300px" height="300px" style="float: right">
+                </div>
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+            </div>
+        </div>
+        <- Added new header for schedule and timing ( Zane ) ->
+
+        <div class="container-fluid courseSchedule">
+            <div class="row">
+                <div class="col-sm-3 col-md-2"></div>
+
+                <div class="col-sm-8 col-md-8 text-center" id="scheduleHeader">
+                    Course Schedule
+                </div>
+
+                <div class="col-sm-2 col-md-2"></div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid coursetiming">
+            <div class="row">
+                <div class="col-sm-3 col-md-2"></div>
+
+                <div class="col-sm-8 col-md-8 text-center" id="timingHeader">
+                    Course Timing
+                </div>
+
+                <div class="col-sm-2 col-md-2"></div>
+
+            </div>
+        </div>
+
+        <!-- LIONEL BWA -->
+
+        <div class="container-fluid bwaIntroduction">
+            <div class="container-fluid rpaHeader">
+                <div class="row">
+                    <div class="col-sm-3 col-md-2"></div>
+
+                    <div class="col-sm-8 col-md-8 text-center" id="rpaBwaHeading">
+                        Business Workflow Automation
+                    </div>
+
+                    <div class="col-sm-2 col-md-2"></div>
+
+                </div>
+            </div>
+
+            <div class="row rpaBwaRow">
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <img src="images/microsoft365.png" width="300px" height="300px" style="float: left">
+                </div>
+                <div class="col-sm-4 col-md-4 bwaDesc">
+                    <h5>When using Microsoft 365 tools such as Excel, OneDrive,
+                        Forms SharePoint, and Power Apps, GO Business Workflow
+                        Automation (GoBWA) helps businesses become more
+                        productive. Participants will create forms, collect and
+                        visualize data, and integrate work processes during the
+                        course of the session.</h5>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bwaSocialMedia">
+            <h2 class="bwaHeaderText">Keep up with us</h2>
+            <div class="row">
+                <div class="col-sm-2 col-md-2">
+
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <img src="images/microsoft365.png" width="90px" height="90px" style="float: left">
+                </div>
+
+                <div class="col-sm-4 col-md-4" style="text-align: right;">
+                    <h4>View Our posts</h4>
+                </div>
+                <div class="col-sm-2 col-md-2">
+
+                </div>
+            </div>
+            <div class="row socialMediaRow">
+                <div class="col-sm-4 col-md-4">
+                    <h3>Social Media 1</h3>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <h3>Social Media 2</h3>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <h3>Social Media 3</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid embedVideo">
+            <div class="row">\
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8">
+                    <div class="video" style="height: 500px; width:auto; background-color: white;opacity: 50%;">
+                    </div>
+
+                </div>
+
+                <div class="col-md-2"></div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="container-fluid rpaContainer" id="rpa">
+
+            <div class="container-fluid rpaHeader">
+                <div class="row">
+                    <div class="col-sm-3 col-md-2"></div>
+
+                    <div class="col-sm-8 col-md-8 text-center" id="rpaBwaHeading">
+                        WHY USE GO BWA
+                    </div>
+
+                    <div class="col-sm-2 col-md-2"></div>
+
+                </div>
+            </div>
+
+
+            <div class="row rpaBwaRow">
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <img src="images/microsoft365icon.png" width="100px" height="100px">
+                        </div>
+                        <div class="col-sm-8 col-md-8" style="margin: auto;">
+                            <h2>uses Microsoft 365</h2>
+                        </div>
+                        <h4>Many companies everywhere are using
+                            Microsoft these days in their daily work
+                            environment. So goBWA helps to train
+                            you effectively in using Microsoft 365
+                            applications to capture, process, and
+                            present data in a auto-efficient way.</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <img src="images/microsoft365.png" width="300px" height="300px" style="float: right">
+                </div>
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+            </div>
+
+            <div class="row rpaBwaRow">
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <img src="images/bwa2.png" width="300px" height="300px" style="float: left">
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <img src="images/files2.png" width="100px" height="100px">
+                        </div>
+                        <div class="col-sm-8 col-md-8" style="margin: auto;">
+                            <h2>Being Organised</h2>
+                        </div>
+                        <h4>Customers are allocated uniquely when
+                            they fill up the forms, so that when data
+                            is extracted into the excel sheet or a
+                            database, it would be sorted out
+                            automatically and accordingly.</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+            </div>
+            <div class="row rpaBwaRow">
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <img src="images/gmail2.png" width="100px" height="100px">
+                        </div>
+                        <div class="col-sm-8 col-md-8" style="margin: auto;">
+                            <h2>Generate Emails</h2>
+                        </div>
+                        <h4>Tired of issuing emails to every customers
+                            manually? goBWA allows you to create
+                            an automated email response to
+                            customers whenever they had fill
+                            up a form or a feedback.</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <img src="images/bwa3.png" width="300px" height="300px" style="float: right">
+                </div>
+                <div class="col-sm-3 col-md-3">
+
+                </div>
+            </div>
+        </div>
+            
+                   <- Added new header for schedule and timing ( Zane ) ->
+
+        <div class="container-fluid courseSchedule">
+            <div class="row">
+                <div class="col-sm-3 col-md-2"></div>
+
+                <div class="col-sm-8 col-md-8 text-center" id="scheduleHeader">
+                    Course Schedule
+                </div>
+
+                <div class="col-sm-2 col-md-2"></div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 col-md-2"></div>
+
+                <div class="col-sm-8 col-md-8 text-center" id="scheduleHeader">
+
+                    <div id="example-table"></div>
+                   
+                </div>
+
+                <div class="col-sm-2 col-md-2"></div>
+
+            </div>
+
+            
+        </div>
+
+        <div class="container-fluid coursetiming">
+            <div class="row">
+                <div class="col-sm-3 col-md-2"></div>
+
+                <div class="col-sm-8 col-md-8 text-center" id="timingHeader">
+                    Course Timing
+                </div>
+
+                <div class="col-sm-2 col-md-2"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- LIONEL FOOTER(touched up footer , pls check lionel) --> 
+    <footer class="bg-dark text-center">
+        <!-- Grid container -->
+        <div class="container p-4" id="links">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5  id="link" class="text-uppercase text-light">HOME</h5>
+                    <h5  id="link" class="text-uppercase text-light ">goRPA</h5>
+                    <h5  id="link" class="text-uppercase text-light">goBWA</h5>
+                    <h5  id="link" class="text-uppercase text-light">Terms and Conditions</h5>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 id="backbutton" class="text-uppercase text-center text-light" onclick="topFunction()">Back to the top</h5>
+
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    </footer>
+
+
+    <!-- LINKS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/wfv0jhd.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -171,8 +615,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
-    
-    
+    <script src="script.js"></script>
+    <!-- LINKS -->
+
+
 </body>
-  
+
 </html>
