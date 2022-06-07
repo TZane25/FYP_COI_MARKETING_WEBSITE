@@ -1,7 +1,77 @@
+
+
+
+.information{
+    background: rgb(36, 34, 195);
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(36, 34, 195, 1) 0%, rgba(187, 39, 255, 1) 100%);
+    color: white;
+}
+
+/* NAV SECTION */
+#navContainer {
+    border-bottom: 2px solid white;
+}
+#navbarNav {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+#navbarNav li a {
+    color: white;
+    mix-blend-mode: difference;
+    padding-left: 20px;
+}
+.scrollNavbar {
+    background-color: transparent;
+}
+
+#scrollNavbartext {
+    color: whitesmoke;
+}
+
+/* HOME SECTION */
+.header {
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+.homeContainer {
+    background-color: black;
+    max-width: 100%;
+    overflow-x: visible;
+}
+#video {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    opacity: 0.5;
+}
+
+.headerContainer {
+    width: auto;
+    height: 60vh;
+    padding-top: 45vh;
+    position: absolute;
+    color: white;
+    place-content: center;
+    resize: both;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/* ABOUT SECTION */
 .aboutContainer{
     color: white;
     background-color: black;
     text-align: center;
+}
+.aboutContainer h2{
+    padding-top:10vh;
 }
 .aboutText{
     padding: 70px;
@@ -13,24 +83,89 @@
     padding: 0.5em 0.6em;
     font-size: 25px;
 }
-.bwaRow{
+
+
+/* BWA SECTION */
+.bwaIntroduction{
+    padding: 10vw;
+}
+
+.bwaDesc{
+    padding: 70px 0;
+}
+
+.bwaContainer{
     color: white;
     background-color: black;
     justify-content: center;
-    padding: 100px;
-    transition: background-color 1s, color 1s, opacity 1s;
 }
 
-.bwaRow:hover{
-    color: black;
-    background-color: white;
+.bwaHeaderText{
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+.socialMediaRow{
+    text-align: center;
+    padding: 10vw;
 }
 
 img{
     margin: auto;
 }
 
-hr{
-    margin-bottom: 5px;
+/* RPA */
+.rpaBwaRow {
+    justify-content: center;
+    padding: 100px;
+   
 }
+
+#rpaBwaHeading{
+    padding: 10vh;
+    text-align: center;
+    font-size: 6vh;
+    border-bottom: 2px solid white;
+}
+
+
+.courseSchedule{
+    text-align: center;
+    padding: 10vw;
+
+}
+.coursetiming{
+    text-align: center;
+    padding: 10vw;
+
+}
+#scheduleHeader{
+    padding: 10vh;
+    text-align: center;
+    font-size: 6vh;
+    border-top: 2px solid white ;
+    border-bottom: 2px solid white;
+}
+#timingHeader{
+    padding: 10vh;
+    text-align: center;
+    font-size: 6vh;
+    border-top: 2px solid white ;
+    border-bottom: 2px solid white;
+
+}
+.links{
+    justify-content: center;
+}
+#link{
+    padding: 1vh;
+}
+#backbutton{
+    justify-content: center;
+    place-content: center;
+    text-align: center;
+    padding-top: 10vh;
+}
+
 
