@@ -1,3 +1,4 @@
+
 .information{
     background: rgb(36, 34, 195);
     background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(36, 34, 195, 1) 0%, rgba(187, 39, 255, 1) 100%);
@@ -17,15 +18,12 @@
     color: white;
     mix-blend-mode: difference;
     padding-left: 20px;
+    text-align: center;
+    justify-content: center;
 }
 .scrollNavbar {
     background-color: transparent;
 }
-
-#scrollNavbartext {
-    color: whitesmoke;
-}
-
 /* HOME SECTION */
 .header {
     justify-content: center;
@@ -201,6 +199,9 @@ img{
     border-radius: 100%;
     font-size: 3vh;
 }
+
+
+
 
 
 
