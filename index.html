@@ -30,13 +30,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="ms-auto navbar-nav">
                     <li class="nav-item active">
-                        <a id="scrollNavbartext" class="nav-link" href="#">About</a>
+                        <a id="scrollNavbartext" class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a id="scrollNavbartext" class="nav-link" href="#">goRPA</a>
+                        <a id="scrollNavbartext" class="nav-link" href="#info">goRPA</a>
                     </li>
                     <li class="nav-item">
-                        <a id="scrollNavbartext" class="nav-link" href="#">goBWA</a>
+                        <a id="scrollNavbartext" class="nav-link" href="#info2">goBWA</a>
                     </li>
                     <li class="nav-item">
                         <a id="scrollNavbartext" class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@
     <!-- LIONEL ABOUT US -->
 
 
-    <div class="container-fluid aboutContainer">
+    <div class="container-fluid aboutContainer" id="about">
         <h2>What we do at COI</h2>
         <div class="row">
             <div class="col-sm-4 col-md-4 aboutText">
@@ -137,7 +137,7 @@
     <!-- ZANE RPA -->
     <div class="spacing"></div>
 
-    <div class="information">
+    <div class="information" id="info">
 
 
         <div class="container-fluid bwaIntroduction">
@@ -198,40 +198,52 @@
                 <div class="row socialMediaRow">
 
                     <div class="col-sm-4 col-md-4 px-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
+
+
+                        <div class="card" id="cardcontent">
+                            <div class="card-title" style="text-align:center">Instagram username</div>
+                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top"
+                                alt="Fissure in Sandstone" />
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    bulk of the card's content.</p>
+                                <a href="#!" class="btn btn-primary">Button</a>
                             </div>
                         </div>
+
+
+                    </div>
+
+
+
+                    <div class="col-sm-4 col-md-4 px-4">
+                        <div class="card" id="cardcontent">
+                            <div class="card-title" style="text-align:center">Instagram username</div>
+                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top"
+                                alt="Fissure in Sandstone" />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#!" class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-sm-4 col-md-4 px-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card" id="cardcontent">
+                            <div class="card-title" style="text-align:center">Instagram username</div>
+                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top"
+                                alt="Fissure in Sandstone" />
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    bulk of the card's content.</p>
+                                <a href="#!" class="btn btn-primary">Button</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4 px-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>
@@ -247,15 +259,15 @@
 
         <div class="container-fluid embedVideo">
             <div class="row">\
-                <div class="col-md-2"></div>
+                <div class="col-md-2 col-sm-3"></div>
 
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-6 ">
                     <div class="video" style="height: 500px; width:auto; background-color: white;opacity: 50%;">
                     </div>
 
                 </div>
 
-                <div class="col-md-2"></div>
+                <div class="col-md-2 col-sm-3"></div>
 
             </div>
 
@@ -382,8 +394,6 @@
                     <table class="table table-bordered" id="scheduleTable">
                         <thead>
                             <tr>
-                           
-
                                 <th id="purp" scope="col">Name</th>
                                 <th id="purp" scope="col">Course Dates</th>
                                 <th id="purp" scope="col">Course Duration</th>
@@ -394,11 +404,11 @@
                             <tr>
                                 <th scope="row">RPA</th>
                                 <td>Check available <br> dates to register</td>
-                                <td>3.5 days <br> (2 days of training +  1.5 <br> days of project consultation )</td>
+                                <td>3.5 days <br> (2 days of training + 1.5 <br> days of project consultation )</td>
                                 <td>RP ACE @ Woodlands or <br> + RP ACE @ Paya Lebar</td>
                             </tr>
-                        
-                           
+
+
                         </tbody>
                     </table>
                 </div>
@@ -442,7 +452,7 @@
                                 <td>$254.10</td>
                                 <td>$674.10</td>
                             </tr>
-                         
+
                         </tbody>
                     </table>
                 </div>
@@ -451,11 +461,36 @@
 
             </div>
 
+
+            <div class="container applybutton py-5">
+                <div class="row px-4">
+                    <div class="col-md-3 col-sm-3">
+
+                    </div>
+
+                    <div class="col-md-6 ">
+
+
+
+
+
+                        <button type="button text-center" style="justify-content: center"
+                            class="btn btn-outline-light" id="apply">Apply Now</button>
+
+
+                    </div>
+                    <div class="col-md-3 col-sm-2">
+
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
         <!-- LIONEL BWA -->
 
-        <div class="container-fluid bwaIntroduction">
+        <div class="container-fluid bwaIntroduction" id="info2">
             <div class="container-fluid rpaHeader">
                 <div class="row">
                     <div class="col-sm-3 col-md-2"></div>
@@ -513,41 +548,47 @@
                 <div class="row socialMediaRow">
 
                     <div class="col-sm-4 col-md-4 px-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card" id="cardcontent">
+                            <div class="card-title" style="text-align:center">Instagram username</div>
+                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top"
+                                alt="Fissure in Sandstone" />
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    bulk of the card's content.</p>
+                                <a href="#!" class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-4 col-md-4 px-4">
+                        <div class="card" id="cardcontent">
+                            <div class="card-title" style="text-align:center">Instagram username</div>
+                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top"
+                                alt="Fissure in Sandstone" />
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#!" class="btn btn-primary">Button</a>
                             </div>
                         </div>
 
                     </div>
                     <div class="col-sm-4 col-md-4 px-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card" id="cardcontent">
+                            <div class="card-title" style="text-align:center">Instagram username</div>
+                            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top"
+                                alt="Fissure in Sandstone" />
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    bulk of the card's content.</p>
+                                <a href="#!" class="btn btn-primary">Button</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4 px-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>
@@ -705,11 +746,11 @@
                             <tr>
                                 <th scope="row">BWA</th>
                                 <td>Check available <br> dates to register</td>
-                                <td>3.5 days <br> (2 days of training +  1.5 <br> days of project consultation )</td>
+                                <td>3.5 days <br> (2 days of training + 1.5 <br> days of project consultation )</td>
                                 <td>RP ACE @ Woodlands or <br> + RP ACE @ Paya Lebar</td>
                             </tr>
-                        
-                        
+
+
                         </tbody>
                     </table>
                 </div>
@@ -757,7 +798,7 @@
                                 <td>$738.30</td>
                                 <td>$278.30</td>
                             </tr>
-                         
+
                         </tbody>
                     </table>
 
@@ -766,7 +807,34 @@
                 <div class="col-sm-2 col-md-2"></div>
 
             </div>
+
+
+            <div class="container applybutton py-5">
+                <div class="row px-4">
+                    <div class="col-md-3 col-sm-3">
+
+                    </div>
+
+                    <div class="col-md-6 ">
+
+
+
+
+
+                        <button type="button text-center" style="justify-content: center"
+                            class="btn btn-outline-light" id="apply">Apply Now</button>
+
+
+                    </div>
+                    <div class="col-md-3 col-sm-2">
+
+                    </div>
+
+                </div>
+            </div>
         </div>
+
+
     </div>
 
 
@@ -816,5 +884,3 @@
 </body>
 
 </html>
-
-                   
