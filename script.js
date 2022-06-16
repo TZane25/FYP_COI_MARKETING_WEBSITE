@@ -13,11 +13,9 @@ $(document).ready(function () {
          
 
       }
-      else if (scroll_pos >= 1700 || scroll_pos <= 3400){
+      else if (scroll_pos >= 1750 || scroll_pos <= 3400){
         $("#navbarNav").css('background-color', 'white');
-        $('#navbarNav').css('transition','transform 1s ease');
-
-        $(".nav-item").css('color', 'black' , 'transition','transform 1s ease')
+     
 
       }
       else 
@@ -33,3 +31,4 @@ function topFunction() {
 
   $('html, body').animate({ scrollTop: 0 }, 'slow'); // top function
 }
+
