@@ -1,5 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
+/* NAV SECTION */
+#navbarNav {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    justify-content: space-around;
+    min-height: 5vh;
+    width:100%;
+    overflow-x: hidden;
+   
+    transition: 200ms ease-in-out;
+}
+#navbarNav li a {
+    color: white;
+    mix-blend-mode: difference;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+   
+    text-align: center;
+    justify-content: center;
+}
+#navbarNav li a:hover{
+    mix-blend-mode: difference;
+    border-bottom: 2px solid white;
+}
+.changeBg{
+    background-color: white;
+}
+.scrollNavbar {
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .information{
     background: rgb(36, 34, 195);
     background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(36, 34, 195, 1) 0%, rgba(187, 39, 255, 1) 100%);
@@ -7,24 +64,6 @@
     height:auto;
 }
 
-/* NAV SECTION */
-#navContainer {
-    border-bottom: 2px solid white;
-}
-#navbarNav {
-    padding-left: 3vw;
-    padding-right: 3vw;
-}
-#navbarNav li a {
-    color: white;
-    mix-blend-mode: difference;
-    padding-left: 20px;
-    text-align: center;
-    justify-content: center;
-}
-.scrollNavbar {
-    background-color: transparent;
-}
 /* HOME SECTION */
 .header {
     justify-content: center;
@@ -212,6 +251,29 @@ img{
     font-size: 3vh;
 }
 
+#cursor {
+
+
+
+
+    position: fixed;
+    border-radius: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    left: -100px;
+    top: 50%;
+    mix-blend-mode: difference;
+    background-color: white;
+    z-index: 10000;
+    border: 3px solid white;
+    height: 60px;
+    width: 60px;
+    transition: all 300ms ease-in;
+    transition: transform 0.3s ease;
+}
+
+
+
 .button {
     display: inline-block;
     border-radius: 4px;
@@ -225,6 +287,7 @@ img{
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+   
   }
   
   .button span {
