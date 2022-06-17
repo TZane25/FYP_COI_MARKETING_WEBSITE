@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /* NAV SECTION */
 nav {
@@ -122,14 +122,17 @@ nav {
 
 
 /* BWA SECTION */
+.bwaInstaPic {
+    margin-bottom: -5%;
+}
+
 .bwaIntroduction{
-    padding: 10vw;
+    padding: 5vw;
 }
 
 .bwaDesc{
     padding: 70px 0;
-    
-    
+    font-family: 'Raleway', sans-serif;
 }
 
 .bwaContainer{
@@ -160,6 +163,7 @@ img{
 
 .b{
     padding: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* RPA */
