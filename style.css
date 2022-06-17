@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
 /* NAV SECTION */
-#navbarNav {
+nav {
     padding-left: 3vw;
     padding-right: 3vw;
     display: flex;
@@ -9,29 +9,42 @@
     min-height: 5vh;
     width:100%;
     overflow-x: hidden;
-   
     transition: 200ms ease-in-out;
 }
-#navbarNav li a {
+
+#navbarNav a {
     color: white;
-    mix-blend-mode: difference;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-
-   
-    text-align: center;
-    justify-content: center;
+    
 }
-#navbarNav li a:hover{
+#brandimage{
+    mix-blend-mode:unset;
+}
+#scrollNavbartext{
     mix-blend-mode: difference;
-    border-bottom: 2px solid white;
 }
-.changeBg{
-    background-color: white;
+#navbarNav a:hover{
+    mix-blend-mode: difference;
+
+    border-bottom: 2px solid white;
 }
 .scrollNavbar {
     background-color: transparent;
+}
+.scrollNavbarblack {
+
+    background-color: white;
+
+}
+.brandraised{
+    z-index: 10;
+    background-attachment: fixed;
+
+}
+.brandraised:hover{
+    background-attachment: fixed;
 }
 
 .information{
@@ -51,6 +64,7 @@
     background-color: black;
     max-width: 100%;
     overflow-x: visible;
+    cursor: pointer;
 }
 #video {
     width: 100%;
@@ -68,6 +82,12 @@
     place-content: center;
     resize: both;
 }
+#coiTitle{
+    font-size: 10vh;
+}
+#coiTag{
+    font-size: 5vh;
+}
 
 .overlay {
     position: absolute;
@@ -76,24 +96,18 @@
     z-index: 1;
 }
 
-#coiTitle {
-    font-size: 400%;
-}
 
 /* ABOUT SECTION */
-i {
-    margin-bottom: 5%;
-}
 .aboutContainer{
     color: white;
     background-color: black;
     text-align: center;
 }
 .aboutContainer h2{
-    padding-top: 13vh;
+    padding-top:10vh;
 }
 .aboutText{
-    padding: 45px;
+    padding: 70px;
 }
 .aboutIcon{
     display: inline-flex;
@@ -103,21 +117,19 @@ i {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    
 }
 
 
 /* BWA SECTION */
-.bwaInstaPic {
-    margin-bottom: -5%;
-}
-
 .bwaIntroduction{
-    padding: 5vw;
+    padding: 10vw;
 }
 
 .bwaDesc{
     padding: 70px 0;
-    font-family: 'Raleway', sans-serif;
+    
+    
 }
 
 .bwaContainer{
@@ -148,14 +160,9 @@ img{
 
 .b{
     padding: 10px;
-    font-family: 'Raleway', sans-serif;
 }
 
 /* RPA */
-.rpaInstaPic {
-    margin-bottom: -5%;
-}
-
 .rpaBwaRow {
     justify-content: center;
     padding: 100px;
@@ -178,31 +185,31 @@ img{
 .coursetiming{
     text-align: center;
     padding: 5vh;
-}
 
+}
 #scheduleHeader{
-    padding: 5vh;
+    padding: 10vh;
     text-align: center;
     font-size: 6vh;
+    border-top: 2px solid white ;
     border-bottom: 2px solid white;
 }
-
 #tableSpacing{
     padding-top:5vh;
 }
-
 #scheduleTable{
     justify-content: center;
     text-align: center;
     place-content: center;
     color: white;
-    border: none;    
+    border: none;
+    
 }
-
 #timingHeader{
-    padding: 5vh;
+    padding: 10vh;
     text-align: center;
     font-size: 6vh;
+    border-top: 2px solid white ;
     border-bottom: 2px solid white;
 
 }
@@ -214,23 +221,42 @@ img{
     border: none;
 
 }
+#tableInfo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
 #purp{
-    background-color: rgb(124, 4, 180);
+    background-color: darkmagenta;
 }
 #blu{
-    background-color: rgb(9, 9, 150);
+    background-color: darkblue;
 }
 .links{
     justify-content: center;
-}
-#link{
-    padding: 1vh;
 }
 #backbutton{
     justify-content: center;
     place-content: center;
     text-align: center;
     padding-top: 10vh;
+    cursor: pointer;
+}
+#link{
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: space-evenly;
+    padding:1vh;
+
+}
+#internalLinks a{
+
+    text-decoration: none;
+
+}
+#internalLinks a h5 svg{
+
+    text-decoration: none;
+
 }
 #cardcontent{
     color:black;
@@ -242,25 +268,10 @@ img{
     font-size: 3vh;
 }
 
-#cursor {
-
-
-
-
-    position: fixed;
-    border-radius: 100%;
-    transform: translateX(-50%) translateY(-50%);
-    pointer-events: none;
-    left: -100px;
-    top: 50%;
-    mix-blend-mode: difference;
-    background-color: white;
-    z-index: 10000;
-    border: 3px solid white;
-    height: 60px;
-    width: 60px;
-    transition: all 300ms ease-in;
-    transition: transform 0.3s ease;
+@keyframes glowing{
+    0% { box-shadow: 0 0 3px 0px #001bae; }
+    50% { box-shadow: 0 0 6px 2px #001bae; }
+    100% { box-shadow: 0 0 3px 0px #001bae;}
 }
 
 
@@ -305,3 +316,4 @@ img{
     opacity: 1;
     right: 0;
   }
+
