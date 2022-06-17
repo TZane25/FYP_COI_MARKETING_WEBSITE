@@ -167,10 +167,13 @@ img{
 }
 
 /* RPA */
+.rpaInstaPic {
+    margin-bottom: -5%;
+}
+
 .rpaBwaRow {
     justify-content: center;
     padding: 100px;
-   
 }
 
 #rpaBwaHeading{
@@ -180,17 +183,16 @@ img{
     border-bottom: 2px solid white;
 }
 
-
 .courseSchedule{
     text-align: center;
     padding: 5vh;
-
 }
+
 .coursetiming{
     text-align: center;
     padding: 5vh;
-
 }
+
 #scheduleHeader{
     padding: 10vh;
     text-align: center;
@@ -198,17 +200,19 @@ img{
     border-top: 2px solid white ;
     border-bottom: 2px solid white;
 }
+
 #tableSpacing{
     padding-top:5vh;
 }
+
 #scheduleTable{
     justify-content: center;
     text-align: center;
     place-content: center;
     color: white;
-    border: none;
-    
+    border: none;    
 }
+
 #timingHeader{
     padding: 10vh;
     text-align: center;
