@@ -20,16 +20,19 @@ nav {
     
 }
 #brandimage{
-    mix-blend-mode:unset;
+    mix-blend-mode: unset;
 }
 #scrollNavbartext{
     mix-blend-mode: difference;
 }
-#navbarNav a:hover{
+#scrollNavbartext:hover {
+    border-bottom: 2px solid white;
+}
+/* #navbarNav a:hover{
     mix-blend-mode: difference;
 
     border-bottom: 2px solid white;
-}
+} */
 .scrollNavbar {
     background-color: transparent;
 }
@@ -60,12 +63,14 @@ nav {
     text-align: center;
     z-index: 10;
 }
+
 .homeContainer {
     background-color: black;
     max-width: 100%;
     overflow-x: visible;
     cursor: pointer;
 }
+
 #video {
     width: 100%;
     max-width: 100%;
@@ -82,9 +87,11 @@ nav {
     place-content: center;
     resize: both;
 }
+
 #coiTitle{
     font-size: 10vh;
 }
+
 #coiTag{
     font-size: 5vh;
 }
@@ -95,7 +102,6 @@ nav {
     left: 0;
     z-index: 1;
 }
-
 
 /* ABOUT SECTION */
 .aboutContainer{
@@ -117,13 +123,12 @@ nav {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    
 }
 
 
 /* BWA SECTION */
 .bwaInstaPic {
-    margin-bottom: -5%;
+    margin-bottom: -8%;
 }
 
 .bwaIntroduction{
@@ -168,12 +173,12 @@ img{
 
 /* RPA */
 .rpaInstaPic {
-    margin-bottom: -5%;
+    margin-bottom: -8%;
 }
 
 .rpaBwaRow {
     justify-content: center;
-    padding: 100px;
+    padding: 70px;
 }
 
 #rpaBwaHeading{
@@ -185,7 +190,7 @@ img{
 
 .courseSchedule{
     text-align: center;
-    padding: 5vh;
+    padding: 1vh;
 }
 
 .coursetiming{
@@ -194,7 +199,7 @@ img{
 }
 
 #scheduleHeader{
-    padding: 10vh;
+    padding: 8vh;
     text-align: center;
     font-size: 6vh;
     border-bottom: 2px solid white;
@@ -213,7 +218,7 @@ img{
 }
 
 #timingHeader{
-    padding: 10vh;
+    padding: 8vh;
     text-align: center;
     font-size: 6vh;
     border-bottom: 2px solid white;
@@ -272,6 +277,9 @@ img{
     height:100%;
     border-radius: 100%;
     font-size: 3vh;
+}
+.applybutton1 {
+    margin-bottom: 15%;
 }
 
 @keyframes glowing{
