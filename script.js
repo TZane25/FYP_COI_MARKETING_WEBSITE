@@ -27,10 +27,10 @@
 // //   });
 // // });
 
-// function topFunction() {
+function topFunction() {
 
-//   $('html, body').animate({ scrollTop: 0 }, 'slow'); // top function
-// }
+  $('html, body').animate({ scrollTop: 0 }, 'slow'); // top function
+}
 
 const nav = document.querySelector('#navbarNav');
 const brand = document.querySelector('#brandimage');
@@ -47,8 +47,6 @@ const observer = new IntersectionObserver(entries => {
     if (entry.isIntersecting) {
       nav.classList.add('scrollNavbarblack')
       brand.classList.add('brandraised')
-
-  
  
 
     }
@@ -69,7 +67,7 @@ anime({
   targets: '.title',
   keyframes:
     [
-      { translateY: -30 },
+      { translateY: -20 },
 
     ],
   direction: 'alternate',
@@ -83,7 +81,7 @@ anime({
 $('.icon1').hover(function () {
   anime({
     targets: '.icon1',
-    duration: 3000,
+    duration: 1000,
     loop: false,
     keyframes:
       [
@@ -92,9 +90,7 @@ $('.icon1').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 10px magenta',
-    autoplay: true,
-    rotate: 360
+    'box-shadow': '10px 10px 100px 5px magenta',
 
 
   });
@@ -105,8 +101,7 @@ $('.icon1').hover(function () {
 $('.icon2').hover(function () {
   anime({
     targets: '.icon2',
-
-    duration: 3000,
+    duration: 1000,
     loop: false,
     keyframes:
       [
@@ -115,10 +110,7 @@ $('.icon2').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 10px magenta',
-    autoplay: true,
-    rotate: 360
-
+    'box-shadow': '10px 10px 100px 5px magenta',
 
 
   });
@@ -129,7 +121,7 @@ $('.icon2').hover(function () {
 $('.icon3').hover(function () {
   anime({
     targets: '.icon3',
-    duration: 3000,
+    duration: 1000,
     loop: false,
     keyframes:
       [
@@ -138,12 +130,7 @@ $('.icon3').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 10px magenta',
-    autoplay: true,
-
-    rotate: 360
-
-
+    'box-shadow': '10px 10px 100px 5px magenta',
 
 
   });
@@ -154,7 +141,7 @@ $('.icon3').hover(function () {
 $('.icon4').hover(function () {
   anime({
     targets: '.icon4',
-    duration: 3000,
+    duration: 1000,
     loop: false,
     keyframes:
       [
@@ -163,10 +150,7 @@ $('.icon4').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 10px magenta',
-    autoplay: true,
-
-    rotate: 360
+    'box-shadow': '10px 10px 100px 5px magenta',
 
 
   });
@@ -177,7 +161,7 @@ $('.icon4').hover(function () {
 $('.icon5').hover(function () {
   anime({
     targets: '.icon5',
-    duration: 3000,
+    duration: 1000,
     loop: false,
     keyframes:
       [
@@ -186,10 +170,7 @@ $('.icon5').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 10px magenta',
-    autoplay: true,
-
-    rotate: 360
+    'box-shadow': '10px 10px 100px 5px magenta',
 
 
   });
@@ -201,7 +182,7 @@ $('.icon5').hover(function () {
 $('.icon6').hover(function () {
   anime({
     targets: '.icon6',
-    duration: 3000,
+    duration: 1000,
     loop: false,
     keyframes:
       [
@@ -210,9 +191,7 @@ $('.icon6').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 10px magenta',
-    autoplay: true,
-    rotate: 360
+    'box-shadow': '10px 10px 100px 5px magenta',
 
 
   });
@@ -223,7 +202,7 @@ $('.icon6').hover(function () {
 $('.icon7').hover(function () {
   anime({
     targets: '.icon7',
-    duration: 3000,
+    duration: 1000,
     loop: false,
     keyframes:
       [
@@ -232,10 +211,7 @@ $('.icon7').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 10px magenta',
-    autoplay: true,
-
-    rotate: 360
+    'box-shadow': '10px 10px 100px 5px magenta',
 
 
   });
@@ -246,7 +222,7 @@ $('.icon7').hover(function () {
 $('.icon8').hover(function () {
   anime({
     targets: '.icon8',
-    duration: 3000,
+    duration: 1000,
     loop: false,
     keyframes:
       [
@@ -255,11 +231,7 @@ $('.icon8').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 10px magenta',
-    autoplay: true,
-
-    rotate: 360
-
+    'box-shadow': '10px 10px 100px 5px magenta',
 
 
   });
@@ -270,7 +242,7 @@ $('.icon8').hover(function () {
 $('.icon9').hover(function () {
   anime({
     targets: '.icon9',
-    duration: 3000,
+    duration: 1000,
     loop: false,
     keyframes:
       [
@@ -279,12 +251,7 @@ $('.icon9').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 10px magenta',
-    autoplay: true,
-
-    rotate: 360
-
-
+    'box-shadow': '10px 10px 100px 5px magenta',
 
 
   });
