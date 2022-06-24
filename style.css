@@ -57,6 +57,26 @@ nav {
     height:auto;
 }
 
+/* Testing */
+
+/* Tablet */
+@media only screen and (max-width: 1024px) and (min-width: 500px) {
+    #coiTitle {font-size: 5vh; margin-top: -45%;}
+    #coiTag {font-size: 2.5vh;}
+}
+
+/* Phone */
+@media only screen and (max-width: 500px) {
+    #coiTitle {font-size: 2.5vh; margin-top: -70%;}
+    #coiTag {font-size: 1.5vh; margin-top: -10%;}
+    #brandimage {width:35%; height:35%}
+}
+
+@media only screen and (min-width: 1024px) {
+    #coiTitle {font-size: 10vh;}
+    #coiTag {font-size: 5vh;}
+}
+
 /* HOME SECTION */
 .header {
     justify-content: center;
@@ -86,14 +106,6 @@ nav {
     color: white;
     place-content: center;
     resize: both;
-}
-
-#coiTitle{
-    font-size: 10vh;
-}
-
-#coiTag{
-    font-size: 5vh;
 }
 
 .overlay {
@@ -164,17 +176,86 @@ img{
 .a{
     border-bottom: 2px solid white;
     padding: 10px;
+    margin-right:75%;
 }
 
 .b{
+    
     padding: 10px;
     font-family: 'Raleway', sans-serif;
 }
 
+
 /* RPA */
+
+/* Tablet */
+@media only screen and (max-width: 1024px) and (min-width: 500px) {
+    .goRPALogo {width: 250px; height:250px; margin-left:10%;}
+    .goBWALogo {width: 250px; height:250px ; margin-left:-20%;}
+    .goRPALogo {margin-top:32%;}
+    .goBWALogo {margin-top:32%;}
+    .bwaDesc {justify-content: center; margin-top: -35%;}
+    .RPAImage {width: 225px; height: 225px; margin-top: 70%;}
+    .RPAImage2 {width: 225px; height: 225px; margin-top: 70%;}
+    .BWAImage {width: 225px; height: 225px; margin-top: 70%;}
+    .BWAImage2 {width: 225px; height: 225px; margin-top: 70%;}
+    .rpaBwaHeading {font-size: 5vh; text-align: center; margin-bottom: -30%;}
+    .screwImage{width: 75px; height:75px; margin-left:-45%}
+    .riskImage {width: 80px; height: 100px; margin-left:-45%}
+    .pigImage {width: 60px; height: 100px;}
+    .microsoftImage {width: 60px; height: 60px; margin-left: -45%;}
+    .fileImage {width: 60px; height: 60px;}
+    .gmailImage {width: 60px; height: 60px; margin-left: -45%}
+    .b {justify-content: center;}
+    
+}
+
+/* Phone */
+@media only screen and (max-width: 500px) {
+    .goRPALogo {width: 200px; height:200px; margin-right: 5%;}
+    .bwaDesc {justify-content: center; margin-left: 4%; text-align: center; margin-top: -35%;}
+    #cardcontent {margin-bottom: 20px; width: auto; height: auto;}
+    .RPALogoI {width:75px; height:75px; float: left;margin-left: 40%; margin-bottom: 10px;}
+    .BWALogoI {width:75px; height:75px; float: left;margin-left: 40%; margin-bottom: 10px;}
+    .VOP {text-align: center;}
+    .RPAImage {display: none;}
+    .RPAImage2 {display: none;}
+    .BWAImage {display: none;}
+    .BWAImage2 {display: none;}
+    .rpaBwaHeading {font-size: 4vh; text-align: center; margin-bottom: -30%;}
+    .goBWALogo {width: 200px; height:200px; margin-left: 7.5%;}
+    .screwImage{width: 50px; height:50px; margin-bottom: 7%;}
+    .riskImage{width: 80px; height: 100px;}
+    .pigImage {width: 60px; height: 100px;}
+    .microsoftImage {width: 40px; height: 40px;}
+    .fileImage {width: 40px; height: 40px;}
+    .gmailImage {width: 40px; height: 40px;}
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    .goRPALogo {width: 300px; height:300px ;}
+    .RPAImage {width: 300px; height: 300px; float:left;}
+    .RPAImage2 {width: 300px; height: 300px; float:right;}
+    .BWAImage {width: 300px; height: 300px; float:right;}
+    .BWAImage2 {width: 300px; height: 300px; float:left;}
+    .goBWALogo {width: 300px; height:300px ; float:right}
+    .bwaDesc {margin-top: -10%;}
+    .screwImage{width: 100px; height: 100px}
+    .riskImage {width: 80px; height: 100px}
+    .pigImage {width: 60px; height: 100px}
+    .microsoftImage {width: 80px; height: 80px;}
+    .fileImage {width: 80px; height: 80px;}
+    .gmailImage {width: 80px; height: 80px;}
+    
+    
+}
+
+
 .rpaInstaPic {
     margin-bottom: -8%;
 }
+
 
 .rpaBwaRow {
     justify-content: center;
