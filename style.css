@@ -237,8 +237,8 @@ img{
     .goRPALogo {width: 300px; height:300px ;}
     .RPAImage {width: 300px; height: 300px; float:left;}
     .RPAImage2 {width: 300px; height: 300px; float:right;}
-    .BWAImage {width: 300px; height: 300px; float:right;}
-    .BWAImage2 {width: 300px; height: 300px; float:left;}
+    .BWAImage {width: 300px; height: 300px; float:left;}
+    .BWAImage2 {width: 300px; height: 300px; float:right;}
     .goBWALogo {width: 300px; height:300px ; float:right}
     .bwaDesc {margin-top: -10%;}
     .screwImage{width: 100px; height: 100px}
