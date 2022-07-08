@@ -1,5 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+
+nav .menu-btn {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    nav:hover {
+        background-color: white;
+    }
+    a {
+        color: black;
+    }
+    nav {
+        background-color: white;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: white;
+    }
+    nav ul a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+    nav #logo {
+        float: right;
+        display: block;
+        padding: 10px 20px;
+    }
+    nav .menu {
+        clear: both;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-right: 7%;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+    nav .menu-icon {
+        padding: 28px 20px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+    }
+    nav .menu-icon .nav-icon {
+        background:#333;
+        display: block;
+        height: 3px;
+        width: 30px;
+        position: relative;
+        transition: background .2s ease-out;
+    }
+    nav .menu-icon .nav-icon::before {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        top: 8px;
+    }
+    nav .menu-icon .nav-icon::after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        top: -8px;
+    }
+    nav .menu-btn {
+        display: none;
+    }
+    nav .menu-btn:checked ~ .menu {
+        max-height: 300px;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon {
+        background: transparent;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+}
 /* NAV SECTION */
 nav {
     padding-left: 3vw;
@@ -10,6 +107,11 @@ nav {
     width:100%;
     overflow-x: hidden;
     transition: 200ms ease-in-out;
+    z-index: 99;
+}
+
+#mySidebar {
+    z-index: 100;
 }
 
 #navbarNav a {
@@ -69,13 +171,14 @@ nav {
 @media only screen and (max-width: 500px) {
     #coiTitle {font-size: 2.5vh; margin-top: -70%;}
     #coiTag {font-size: 1.5vh; margin-top: -10%;}
-    #brandimage {width:35%; height:35%}
 }
 
 @media only screen and (min-width: 1024px) {
     #coiTitle {font-size: 10vh;}
     #coiTag {font-size: 5vh;}
 }
+
+
 
 /* HOME SECTION */
 .header {
@@ -96,6 +199,7 @@ nav {
     max-width: 100%;
     overflow-x: hidden;
     opacity: 0.5;
+    
 }
 
 .headerContainer {
@@ -124,9 +228,11 @@ nav {
 .aboutContainer h2{
     padding-top:10vh;
 }
+
 .aboutText{
     padding: 70px;
 }
+
 .aboutIcon{
     display: inline-flex;
     justify-content: center;
@@ -188,7 +294,12 @@ img{
 
 /* RPA */
 
-/* Tablet */
+.card:hover {
+    transform:scale(1.1);
+    z-index: 1;
+}
+
+/* Tablet (iPad Air) */
 @media only screen and (max-width: 1024px) and (min-width: 500px) {
     .goRPALogo {width: 250px; height:250px; margin-left:10%;}
     .goBWALogo {width: 250px; height:250px ; margin-left:-20%;}
@@ -207,10 +318,11 @@ img{
     .fileImage {width: 60px; height: 60px;}
     .gmailImage {width: 60px; height: 60px; margin-left: -45%}
     .b {justify-content: center;}
+    .menu {float:right;}
     
 }
 
-/* Phone */
+/* Phone (iPhone 12 Pro) */
 @media only screen and (max-width: 500px) {
     .goRPALogo {width: 200px; height:200px; margin-right: 5%;}
     .bwaDesc {justify-content: center; margin-left: 4%; text-align: center; margin-top: -35%;}
@@ -242,15 +354,19 @@ img{
     .goBWALogo {width: 300px; height:300px ; float:right}
     .bwaDesc {margin-top: -10%;}
     .screwImage{width: 100px; height: 100px}
-    .riskImage {width: 80px; height: 100px}
+    .riskImage {width: 80px; height: 100px; margin-left:20%}
     .pigImage {width: 60px; height: 100px}
     .microsoftImage {width: 80px; height: 80px;}
     .fileImage {width: 80px; height: 80px;}
-    .gmailImage {width: 80px; height: 80px;}
-    
-    
+    .gmailImage {width: 80px; height: 80px;}   
 }
 
+/* Phone (iPhone 12/13 Pro Max) */
+@media only screen and (min-width: 428px) and (max-width: 428px) {
+    .goRPALogo {width: 200px; height:200px; margin-right:9.5%;}
+    .goBWALogo {width: 200px; height:200px; margin-left: 12.5%;}
+    .bwaDesc { margin-right:2%; }
+}
 
 .rpaInstaPic {
     margin-bottom: -8%;
@@ -350,9 +466,10 @@ img{
     text-decoration: none;
 
 }
-#cardcontent{
-    color:black;
-}
+
+
+
+
 #apply{
     width:50%;
     height:100%;
@@ -411,4 +528,10 @@ img{
     opacity: 1;
     right: 0;
   }
+ 
+  .card {
+    text-decoration: none;
+  }
 
+
+  
