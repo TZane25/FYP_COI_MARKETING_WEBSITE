@@ -1,69 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <title>FYP</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- LINKS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
     <script src="https://kit.fontawesome.com/a62ce815d5.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- LINKS -->
-    <title>FYP</title>
-    <style>
 
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("/w3images/mac.jpg");
+            min-height: 100%;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
     </style>
 </head>
 
 <body>
 
-
-    <!-- ZANE NAV BAR -->
-    <div class="container-fluid navContainer">
-
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light scrollNavbar" id="navbarNav">
-            <a class="navbar-brand" href="#homeContainer">
-                <img id="brandimage" src="images/rp1.png" width="230px" height="80px" class="d-inline-block align-top">
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">
+                <a class="navbar-brand" href="#homeContainer">
+                    <img id="brandimage" src="images/rp1.png" width="230px" height="80px"
+                        class="d-inline-block align-top">
+                </a>
             </a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="#info" class="w3-bar-item w3-button">goRPA</a>
+                <a href="#info2" class="w3-bar-item w3-button">goBWA</a>
+                <a href="https://www.instagram.com/rp.coi/" target="_blank" class="w3-bar-item w3-button"><i
+                        class="fa fa-instagram"></i>
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
 
-            <div class="collapse navbar-collapse">
-                <ul class="ms-auto navbar-nav">
-                    <li class="nav-item">
-                        <a id="scrollNavbartext" class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="scrollNavbartext" class="nav-link" href="#info">goRPA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="scrollNavbartext" class="nav-link" href="#info2">goBWA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="scrollNavbartext" class="nav-link" href="https://www.instagram.com/rp.coi/"
-                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                            </svg></i></a>
-                    </li>
-
-                </ul>
+                </a>
             </div>
-        </nav>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </div>
 
-    <div class="container-fluid homeContainer" id="homeContainer">
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#info" onclick="w3_close()" class="w3-bar-item w3-button">goRPA</a>
+        <a href="#info2" onclick="w3_close()" class="w3-bar-item w3-button">goBWA</a>
+        <a onclick="w3_close()" id="scrollNavbartext" class="nav-link" href="https://www.instagram.com/rp.coi/"
+            target="_blank"><i class="fa fa-instagram"></i>
+            <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </a>
+
+    </nav>
+
+    <!-- Header with full-height image -->
+
+    <div class="container-fluid homeContainer" id="homeContainer" style="margin-top: 80px;">
         <video autoplay loop muted id="video" source src="images/video.mp4" type="video/mp4">
 
 
         </video>
 
-        <div class="headerContainer container-fluid header overlay">
+        <div class="headerContainer container-fluid header overlay" style="margin-top: 80px">
             <h1 class="title" id="coiTitle">CENTRE OF INNOVATION</h1>
             <br>
             <h3 id="coiTag">Where ideas come to life</h3>
@@ -72,8 +113,11 @@
 
     </div>
 
+
+
     <!-- LIONEL ABOUT US -->
     <div class="container-fluid aboutContainer" id="about">
+        <br /><br /><br />
         <h2>What we do at COI</h2>
         <div class="row">
             <div class="col-sm-4 col-md-4 aboutText">
@@ -139,6 +183,7 @@
         </div>
     </div>
 
+
     <!-- ZANE RPA -->
     <div class="spacing"></div>
 
@@ -160,27 +205,27 @@
                     </div>
                 </div>
             </div>
-           
-                <div class="row rpaBwaRow">
-                    
-                    <div class="col-sm-4 col-md-4x">
-                        <img class="goRPALogo" src="images2/rpalogo.png" style="float: right;">
-                    </div>
-                    <div class="col-sm-1 col-md-1 extra">
-                    </div>
-                    <div class="col-sm-4 col-md-4 bwaDesc">
-                        <h5 class="bwaDesc">This program aims to appreciate the benefits of RPA in
-                            automating repetitive tasks and eliminate human error.
-                            Attaining the skills in RPA script development and apply
-                            directly to their work processes. Lastly, to be equipped
-                            with the knowledge to assess and identify possible areas
-                            for RPA development to improve work productivity.</h5>
-                    </div>
-                    <div class="col-sm-1 col-md-1">
-                    </div>
-                    
+
+            <div class="row rpaBwaRow">
+
+                <div class="col-sm-4 col-md-4x">
+                    <img class="goRPALogo" src="images2/rpalogo.png" style="float: right;">
                 </div>
-            
+                <div class="col-sm-1 col-md-1 extra">
+                </div>
+                <div class="col-sm-4 col-md-4 bwaDesc">
+                    <h5 class="bwaDesc">This program aims to appreciate the benefits of RPA in
+                        automating repetitive tasks and eliminate human error.
+                        Attaining the skills in RPA script development and apply
+                        directly to their work processes. Lastly, to be equipped
+                        with the knowledge to assess and identify possible areas
+                        for RPA development to improve work productivity.</h5>
+                </div>
+                <div class="col-sm-1 col-md-1">
+                </div>
+
+            </div>
+
         </div>
 
         <div class="container-fluid bwaSocialMedia">
@@ -205,35 +250,36 @@
                 <div class="row socialMediaRow">
 
                     <div class="col-sm-4 col-md-4">
-                        <a href="">
+                        <a href="https://www.instagram.com/p/Cfn5B-fP40-/">
                             <div class="card" id="cardcontent">
-                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-                                    class="card-img-top" alt="Fissure in Sandstone" />
+                                <img src="images/RPA Post 1 SubPost 2.png"
+                                    class="card-img-top" />
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                        <a href="">
-                            <div class="card" id="cardcontent">
-                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-                                    class="card-img-top" alt="Fissure in Sandstone" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>                               
+                                    <h5 class="card-title">What is goRPA and how does it help me?</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="col-sm-4 col-md-4">
-                        <a href="">
+                        <a href="https://www.instagram.com/p/Cfn45qNvoPc/">
                             <div class="card" id="cardcontent">
-                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-                                    class="card-img-top" alt="Fissure in Sandstone" />
+                                <img src="images/RPA Post 2 SubPost 4.png"
+                                    class="card-img-top"/>
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">Still unsure of goRPA?</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <a href="https://www.instagram.com/p/Cfn41lpPiQo/">
+                            <div class="card" id="cardcontent">
+                                <img src="images/RPA Post 3 SubPost 2.png"
+                                    class="card-img-top" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Want to know more about goRPA?</h5>
                                 </div>
                             </div>
                         </a>
@@ -270,7 +316,7 @@
                     <div class="col-sm-3 col-md-2"></div>
 
                     <div class="col-sm-8 col-md-8 text-center" id="rpaBwaHeading">
-                        <p class="rpaBwaHeading">WHY USE GO RPA</p>
+                        <p class="rpaBwaHeading">WHY USE goRPA</p>
                     </div>
 
                     <div class="col-sm-2 col-md-2"></div>
@@ -305,7 +351,7 @@
                 <div class="col-sm-4 col-md-4">
                     <img src="images/autoprocess.png" class="RPAImage">
                 </div>
-                
+
             </div>
 
             <div class="row rpaBwaRow">
@@ -318,7 +364,7 @@
                 <div class="col-sm-4 col-md-4">
                     <div class="row a">
                         <div class="col-sm-4 col-md-4">
-                            <img class ="pigImage"src="images/piggy.png" width="60px" height="100px">
+                            <img class="pigImage" src="images/piggy.png" width="60px" height="100px">
                         </div>
                         <div class="col-sm-8 col-md-8" style="margin: auto;">
                             <h2>Cost Management</h2>
@@ -360,7 +406,7 @@
                 <div class="col-sm-4 col-md-4">
                     <img src="images/risk.png" class="RPAImage">
                 </div>
-                
+
             </div>
         </div>
 
@@ -514,7 +560,7 @@
 
                 </div>
                 <div class="col-sm-4 col-md-4">
-                    <img class= "BWALogoI" src="images2/bwalogo.png" width="100px" height="100px" style="float: left">
+                    <img class="BWALogoI" src="images2/bwalogo.png" width="100px" height="100px" style="float: left">
                 </div>
 
                 <div class="col-sm-4 col-md-4" style="text-align: right;">
@@ -529,36 +575,36 @@
                 <div class="row socialMediaRow">
 
                     <div class="col-sm-4 col-md-4">
-                        <a href="">
+                        <a href="https://www.instagram.com/p/Cfn4vmLP2m4/">
                             <div class="card" id="cardcontent">
-                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-                                    class="card-img-top" alt="Fissure in Sandstone" />
+                                <img src="images/BWA Post 1 SubPost 3.png"
+                                    class="card-img-top"/>
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>                                  
+                                    <h5 class="card-title">What is goBWA and how does it help me?</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="col-sm-4 col-md-4">
-                        <a href="">
+                        <a href="https://www.instagram.com/p/Cfn4sUcv5BJ/">
                             <div class="card" id="cardcontent">
-                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-                                    class="card-img-top" alt="Fissure in Sandstone" />
+                                <img src="images/BWA Post 2 SubPost 4.png"
+                                    class="card-img-top" />
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>                                   
+                                    <h5 class="card-title">Still unsure of goBWA?</h5>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="col-sm-4 col-md-4">
-                        <a href="">
+                        <a href="https://www.instagram.com/p/Cfn4lUqvdiA/">
                             <div class="card" id="cardcontent">
-                                <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-                                    class="card-img-top" alt="Fissure in Sandstone" />
+                                <img src="images/BWA Post 3 SubPost 2.png"
+                                    class="card-img-top"/>
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>                              
+                                    <h5 class="card-title">Want to know more about goBWA?</h5>
                                 </div>
                             </div>
                         </a>
@@ -598,7 +644,7 @@
                     <div class="col-sm-3 col-md-2"></div>
 
                     <div class="col-sm-8 col-md-8 text-center" id="rpaBwaHeading">
-                        <p class="rpaBwaHeading">WHY USE GO BWA</p>
+                        <p class="rpaBwaHeading">WHY USE goBWA</p>
                     </div>
 
                     <div class="col-sm-2 col-md-2"></div>
@@ -634,7 +680,7 @@
                 <div class="col-sm-4 col-md-4">
                     <img src="images/microsoft365.png" class="BWAImage">
                 </div>
-            
+
             </div>
 
             <div class="row rpaBwaRow">
@@ -647,18 +693,15 @@
                 <div class="col-sm-4 col-md-4">
                     <div class="row a">
                         <div class="col-sm-4 col-md-4">
-                            <img class="fileImage" src="images/files2.png">
+                            <img class="pigImage" src="images/piggy.png" width="60px" height="100px">
                         </div>
                         <div class="col-sm-8 col-md-8" style="margin: auto;">
-                            <h2>Being Organised</h2>
+                            <h2>Low Cost</h2>
                         </div>
 
                     </div>
-                    <h4 class="b">Customers are allocated uniquely when
-                        they fill up the forms, so that when data
-                        is extracted into the excel sheet or a
-                        database, it would be sorted out
-                        automatically and accordingly.</h4>
+                    <h4 class="b">Reduces unnecessary expenses like labour costs and manpower as there is an increase in
+                        productivity through automation. Hence, less time is being wasted.</h4>
                 </div>
                 <div class="col-sm-1 col-md-1">
 
@@ -671,18 +714,20 @@
                 <div class="col-sm-4 col-md-4">
                     <div class="row a">
                         <div class="col-sm-4 col-md-4">
-                            <img class="gmailImage" src="images/gmail2.png">
+                            <img class="screwImage" src="images/screw.png">
                         </div>
                         <div class="col-sm-8 col-md-8" style="margin: auto;">
-                            <h2>Generate Emails</h2>
+                            <h2>Full Automation</h2>
                         </div>
 
                     </div>
-                    <h4 class="b">Tired of issuing emails to every customers
-                        manually? goBWA allows you to create
-                        an automated email response to
-                        customers whenever they had fill
-                        up a form or a feedback.</h4>
+                    <h4 class="b">
+
+                        Tired of having to do the same task every day? goBWA allows you to handle routine tasks that you
+                        are working on automatically.
+                        Additionally, you would be able to work on something else while the system is occupied
+                        automating the tedious task for you. It helps you save time and effort.
+                    </h4>
                 </div>
                 <div class="col-sm-1 col-md-1">
 
@@ -690,7 +735,7 @@
                 <div class="col-sm-4 col-md-4">
                     <img src="images/bwa3.png" class="BWAImage">
                 </div>
-                
+
             </div>
         </div>
 
@@ -725,7 +770,7 @@
                                 <th scope="row">BWA</th>
                                 <td>Register to check<br>available dates</td>
                                 <td>3.5 days <br> (2 days of training + 1.5 <br> days of project consultation )</td>
-                                <td>RP ACE @ Woodlands or <br> + RP ACE @ Paya Lebar</td>
+                                <td>RP ACE @ Woodlands</td>
                             </tr>
 
 
@@ -810,6 +855,8 @@
     </div>
 
 
+
+
     <!-- LIONEL FOOTER -->
     <footer class="bg-dark text-center">
         <!-- Grid container -->
@@ -851,6 +898,29 @@
     </footer>
 
 
+
+    <script>
+
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+
+
+    </script>
     <!-- LINKS -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -864,8 +934,6 @@
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="script.js"></script>
     <!-- LINKS -->
-
-
 </body>
 
 </html>
