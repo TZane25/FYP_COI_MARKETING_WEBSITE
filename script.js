@@ -10,12 +10,12 @@
 //       if (scroll_pos <= 1700) { 
 
 //         $("#navbarNav").css('background-color', 'transparent'); // change the bottom color // elgengroid
-         
+
 
 //       }
 //       else if (scroll_pos >= 1750 || scroll_pos <= 3400){
 //         $("#navbarNav").css('background-color', 'white');
-     
+
 
 //       }
 //       else 
@@ -47,7 +47,7 @@ const observer = new IntersectionObserver(entries => {
     if (entry.isIntersecting) {
       nav.classList.add('scrollNavbarblack')
       brand.classList.add('brandraised')
- 
+
 
     }
     else {
@@ -77,8 +77,58 @@ anime({
 });
 
 
+anime({
+  targets: '.screwImage',
+  keyframes:
+    [
+      {rotate: 360},
+    ],
+  easing: 'easeInOutQuad',
+  loop: true,
+  duration: 5500,
+})
 
-$('.icon1').hover(function () {
+anime({
+  targets: '.pigImage',
+  keyframes:
+    [
+      { translateY: -15 },
+    ],
+  direction: 'alternate',
+  easing: 'easeInOutQuad',
+  loop: true,
+  duration: 1500,
+})
+
+anime({
+  targets: '.riskImage',
+  keyframes:
+    [
+      { translateY: -30,
+        rotate: 15
+      },
+    ],
+  direction: 'alternate',
+  easing: 'easeInOutQuad',
+  loop: true,
+  duration: 1500,
+})
+
+anime({
+  targets: '.microsoftImage',
+  keyframes:
+    [
+      { rotate: 25,
+        rotate: -25},
+    ],
+  direction: 'alternate',
+  easing: 'easeInOutQuad',
+  loop: true,
+  duration: 1500,
+})
+
+
+$('.icon1').mouseenter(function () {
   anime({
     targets: '.icon1',
     duration: 1000,
@@ -90,15 +140,31 @@ $('.icon1').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 5px magenta',
+    'box-shadow': '10px 10px 100px 5px magenta'
 
+  })
+});
 
-  });
+$('.icon1').mouseleave(function () {
+  anime({
+    targets: '.icon1',
+    duration: 1000,
+    loop: false,
+    keyframes:
+      [
+        { translateY: 0 },
 
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad',
+    'box-shadow': '10px 10px 100px 5px black'
+    
+
+  })
 });
 
 
-$('.icon2').hover(function () {
+$('.icon2').mouseenter(function () {
   anime({
     targets: '.icon2',
     duration: 1000,
@@ -110,15 +176,31 @@ $('.icon2').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 5px magenta',
+    'box-shadow': '10px 10px 100px 5px magenta'
 
+  })
+});
 
-  });
+$('.icon2').mouseleave(function () {
+  anime({
+    targets: '.icon2',
+    duration: 1000,
+    loop: false,
+    keyframes:
+      [
+        { translateY: 0 },
 
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad',
+    'box-shadow': '10px 10px 100px 5px black'
+    
+
+  })
 });
 
 
-$('.icon3').hover(function () {
+$('.icon3').mouseenter(function () {
   anime({
     targets: '.icon3',
     duration: 1000,
@@ -130,15 +212,31 @@ $('.icon3').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 5px magenta',
+    'box-shadow': '10px 10px 100px 5px magenta'
 
+  })
+});
 
-  });
+$('.icon3').mouseleave(function () {
+  anime({
+    targets: '.icon3',
+    duration: 1000,
+    loop: false,
+    keyframes:
+      [
+        { translateY: 0 },
 
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad',
+    'box-shadow': '10px 10px 100px 5px black'
+    
+
+  })
 });
 
 
-$('.icon4').hover(function () {
+$('.icon4').mouseenter(function () {
   anime({
     targets: '.icon4',
     duration: 1000,
@@ -150,15 +248,31 @@ $('.icon4').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 5px magenta',
+    'box-shadow': '10px 10px 100px 5px magenta'
 
+  })
+});
 
-  });
+$('.icon4').mouseleave(function () {
+  anime({
+    targets: '.icon4',
+    duration: 1000,
+    loop: false,
+    keyframes:
+      [
+        { translateY: 0 },
 
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad',
+    'box-shadow': '10px 10px 100px 5px black'
+    
+
+  })
 });
 
 
-$('.icon5').hover(function () {
+$('.icon5').mouseenter(function () {
   anime({
     targets: '.icon5',
     duration: 1000,
@@ -170,16 +284,32 @@ $('.icon5').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 5px magenta',
+    'box-shadow': '10px 10px 100px 5px magenta'
 
+  })
+});
 
-  });
+$('.icon5').mouseleave(function () {
+  anime({
+    targets: '.icon5',
+    duration: 1000,
+    loop: false,
+    keyframes:
+      [
+        { translateY: 0 },
 
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad',
+    'box-shadow': '10px 10px 100px 5px black'
+    
+
+  })
 });
 
 
 
-$('.icon6').hover(function () {
+$('.icon6').mouseenter(function () {
   anime({
     targets: '.icon6',
     duration: 1000,
@@ -191,15 +321,31 @@ $('.icon6').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 5px magenta',
+    'box-shadow': '10px 10px 100px 5px magenta'
 
+  })
+});
 
-  });
+$('.icon6').mouseleave(function () {
+  anime({
+    targets: '.icon6',
+    duration: 1000,
+    loop: false,
+    keyframes:
+      [
+        { translateY: 0 },
 
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad',
+    'box-shadow': '10px 10px 100px 5px black'
+    
+
+  })
 });
 
 
-$('.icon7').hover(function () {
+$('.icon7').mouseenter(function () {
   anime({
     targets: '.icon7',
     duration: 1000,
@@ -211,15 +357,31 @@ $('.icon7').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 5px magenta',
+    'box-shadow': '10px 10px 100px 5px magenta'
 
+  })
+});
 
-  });
+$('.icon7').mouseleave(function () {
+  anime({
+    targets: '.icon7',
+    duration: 1000,
+    loop: false,
+    keyframes:
+      [
+        { translateY: 0 },
 
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad',
+    'box-shadow': '10px 10px 100px 5px black'
+    
+
+  })
 });
 
 
-$('.icon8').hover(function () {
+$('.icon8').mouseenter(function () {
   anime({
     targets: '.icon8',
     duration: 1000,
@@ -231,15 +393,31 @@ $('.icon8').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 5px magenta',
+    'box-shadow': '10px 10px 100px 5px magenta'
 
+  })
+});
 
-  });
+$('.icon8').mouseleave(function () {
+  anime({
+    targets: '.icon8',
+    duration: 1000,
+    loop: false,
+    keyframes:
+      [
+        { translateY: 0 },
 
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad',
+    'box-shadow': '10px 10px 100px 5px black'
+    
+
+  })
 });
 
 
-$('.icon9').hover(function () {
+$('.icon9').mouseenter(function () {
   anime({
     targets: '.icon9',
     duration: 1000,
@@ -251,11 +429,27 @@ $('.icon9').hover(function () {
       ],
     direction: 'alternate',
     easing: 'easeInOutQuad',
-    'box-shadow': '10px 10px 100px 5px magenta',
+    'box-shadow': '10px 10px 100px 5px magenta'
 
+  })
+});
 
-  });
+$('.icon9').mouseleave(function () {
+  anime({
+    targets: '.icon9',
+    duration: 1000,
+    loop: false,
+    keyframes:
+      [
+        { translateY: 0 },
 
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad',
+    'box-shadow': '10px 10px 100px 5px black'
+    
+
+  })
 });
 
 
