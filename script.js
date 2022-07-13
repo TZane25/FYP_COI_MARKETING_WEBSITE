@@ -127,6 +127,99 @@ anime({
   duration: 1500,
 })
 
+$('.card1').mouseenter(function () {
+  anime({
+    targets: '.card1',
+    duration: 500,
+    loop: false,
+    keyframes:
+      [
+        { scale: 1.1 },
+
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad'
+  })
+});
+
+$('.card1').mouseleave(function () {
+  anime({
+    targets: '.card1',
+    duration: 500,
+    loop: false,
+    keyframes:
+      [
+        { scale: 1.0},
+
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad'
+
+  })
+});
+
+$('.card2').mouseenter(function () {
+  anime({
+    targets: '.card2',
+    duration: 500,
+    loop: false,
+    keyframes:
+      [
+        { scale: 1.1 },
+
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad'
+  })
+});
+
+$('.card2').mouseleave(function () {
+  anime({
+    targets: '.card2',
+    duration: 500,
+    loop: false,
+    keyframes:
+      [
+        { scale: 1.0},
+
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad'
+
+  })
+});
+
+$('.card3').mouseenter(function () {
+  anime({
+    targets: '.card3',
+    duration: 500,
+    loop: false,
+    keyframes:
+      [
+        { scale: 1.1 },
+
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad'
+  })
+});
+
+$('.card3').mouseleave(function () {
+  anime({
+    targets: '.card3',
+    duration: 500,
+    loop: false,
+    keyframes:
+      [
+        { scale: 1.0},
+
+      ],
+    direction: 'alternate',
+    easing: 'easeInOutQuad'
+
+  })
+});
+
 
 $('.icon1').mouseenter(function () {
   anime({
