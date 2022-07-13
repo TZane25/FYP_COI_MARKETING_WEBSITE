@@ -162,8 +162,8 @@ nav {
     height:auto;
 }
 
-/* Testing */
 
+/* Header */
 /* Tablet */
 @media only screen and (max-width: 1024px) and (min-width: 500px) {
     #coiTitle {font-size: 5vh; margin-top: -45%;}
@@ -295,8 +295,6 @@ img{
 }
 
 
-/* RPA */
-
 .card:hover {
     z-index: 1;
 }
@@ -371,6 +369,8 @@ img{
     .goBWALogo {width: 200px; height:200px; margin-left: 12.5%;}
     .bwaDesc { margin-right:2%; }
 }
+
+/* RPA */
 
 .rpaInstaPic {
     margin-bottom: -8%;
@@ -533,8 +533,8 @@ img{
     right: 0;
   }
  
-  .card {
-    text-decoration: none;
+  h5 {
+    color: black;
   }
 
 
